@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	// "os"
-	// "strconv"
+	"strconv"
 	// "strings"
 )
 
@@ -46,8 +46,8 @@ func main() {
 	// count := countNumber(1000)
 
 	// ข้อ 3.1
-	// count := countNumber(10000)
-	// fmt.Println("The number of 9s in the numbers from 1 to 10000 is:", count)
+	count := countNumber(10000)
+	fmt.Println("The number of 9s in the numbers from 1 to 10000 is:", count)
 
 	// ข้อ 4
 	// myWords := "AW SOME GO!"
@@ -67,37 +67,36 @@ func main() {
 	// 	{Name: "Alice", Age: 35, Address: "1011 Pine Street"},
 	// }
 	// for _, person := range people {
-	// 	fmt.Println("Name -:", person.Name)
-	// 	fmt.Println("Age -:", person.Age)
+	// 	fmt.Printf("Name -: %v (Age: %v)\n", person.Name, person.Age)
 	// 	fmt.Println("Address -:", person.Address)
 	// 	fmt.Println()
 	// }
 
 	// ข้อ 6
-	var c Company
-	c2 := new(Company)
+	// var c Company
+	// c2 := new(Company)
+	
+	// c.Name = "ABC Company"
+	// c.Address = "123 Main Street, City, Country"
+	// c.PhoneNumber = "123-456-7890"
+	// c.Website = "www.abccompany.com"
 
-	c2.Name = "ABC Company"
-	c2.Address = "123 Main Street, City, Country"
-	c2.PhoneNumber = "123-456-7890"
-	c2.Website = "www.abccompany.com"
-
-	fmt.Println("Company Name:", c2.Name)
-	fmt.Println("Address:", c2.Address)
-	fmt.Println("Phone Number:", c2.PhoneNumber)
-	fmt.Println("Website:", c2.Website)
-	fmt.Println()
-
-	c.Name = "ABC Company"
-	c.Address = "123 Main Street, City, Country"
-	c.PhoneNumber = "123-456-7890"
-	c.Website = "www.abccompany.com"
-
-	fmt.Println("Company Name:", c.Name)
-	fmt.Println("Address:", c.Address)
-	fmt.Println("Phone Number:", c.PhoneNumber)
-	fmt.Println("Website:", c.Website)
-	fmt.Println()
+	// c2.Name = "ABC Company"
+	// c2.Address = "123 Main Street, City, Country"
+	// c2.PhoneNumber = "123-456-7890"
+	// c2.Website = "www.abccompany.com"
+	
+	// fmt.Println("Company Name:", c.Name)
+	// fmt.Println("Address:", c.Address)
+	// fmt.Println("Phone Number:", c.PhoneNumber)
+	// fmt.Println("Website:", c.Website)
+	// fmt.Println()
+	
+	// fmt.Println("Company Name:", c2.Name)
+	// fmt.Println("Address:", c2.Address)
+	// fmt.Println("Phone Number:", c2.PhoneNumber)
+	// fmt.Println("Website:", c2.Website)
+	// fmt.Println()
 
 	// company := Company{
 	// 	Name:       "ABC Company",
@@ -111,6 +110,13 @@ func main() {
 	// fmt.Println("Phone Number:", company.PhoneNumber)
 	// fmt.Println("Website:", company.Website)
 	
+	// special 
+	// for i := 1; i <= 6; i++ {
+	// 	for j := 1; j <= i; j++ {
+	// 		fmt.Print("*")
+	// 	}
+	// 	fmt.Println()
+	// }
 }
 // func num2() {
 // 	x := 4
@@ -146,18 +152,18 @@ func main() {
 // 	return
 // }
 
-// func countNumber(n int) int {
-// 	count := 0
-// 	for i := 1; i <= n; i++ {
-// 		str := strconv.Itoa(i)
-// 		for _, c := range str {
-// 			if c == '9' {
-// 				count++
-// 			}
-// 		}
-// 	}
-// 	return count
-// }
+func countNumber(n int) int {
+	count := 0
+	for i := 1; i <= n; i++ {
+		str := strconv.Itoa(i)
+		for _, c := range str {
+			if c == '9' {
+				count++
+			}
+		}
+	}
+	return count
+}
 
 // func removeSpaces(s string) string {
 // 	var newText string
