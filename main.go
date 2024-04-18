@@ -24,11 +24,14 @@ func main() {
 	// fmt.Println("Hello world")
 
 	// //ข้อ1
-	// for i := 0; i <=100 ; i++ {
+	// count := 0
+	// for i := 1; i <=100 ; i++ {
 	// 	if i%3 == 0 {
 	// 		fmt.Println(i)
+	// 		count++
 	// 	}
 	// }
+	// fmt.Println("The number of multiples of 3 from 1 to 100 is:", count)
 
 	//ข้อ 1.2
 	// num2()
@@ -58,50 +61,55 @@ func main() {
 
 	// ข้อ 5
 	// people := []Person{
-	// 	{Name: "Mr. Tim Carry", Age: 25, Address: "142rd roads, Virginir, 22202"},
-	// 	{Name: "Ms. Laura McCoy", Age: 22, Address: "123/western Street, New York, 12304"},
-	// 	{Name: "Nura", Age: 22, Address: "Saraburi"},
+	// 	{Name: "John", Age: 30, Address: "123 Main Street"},
+	// 	{Name: "Jane", Age: 25, Address: "456 Elm Street"},
+	// 	{Name: "Bob", Age: 40, Address: "789 Oak Street"},
+	// 	{Name: "Alice", Age: 35, Address: "1011 Pine Street"},
+	// }
+	// for _, person := range people {
+	// 	fmt.Println("Name -:", person.Name)
+	// 	fmt.Println("Age -:", person.Age)
+	// 	fmt.Println("Address -:", person.Address)
+	// 	fmt.Println()
 	// }
 
-	// fmt.Println("Enter 0 to print all , 1 to print person 2, or any other key to exit:")
-	// var choice int
-	// _, err := fmt.Scan(&choice)
-	// if err != nil {
-	// 	fmt.Println("Error reading input:", err)
-	// 	os.Exit(1)
-	// }
-
-	// switch choice {
-	// case 1:
-	// 	if len(people) > 1 {
-	// 		p := people[1]
-	// 		fmt.Printf("Name -: %s (Age: %d)\n", p.Name, p.Age)
-	// 		fmt.Printf("Address -: %s\n", p.Address)
-	// 	} else {
-	// 		fmt.Println("No person 2 data available")
-	// 	}
-	// case 0:
-	// 	fmt.Println("Result -:")
-	// 	for _, p := range people {
-	// 		fmt.Printf("Name -: %s (Age: %d)\n", p.Name, p.Age)
-	// 		fmt.Printf("Address -: %s\n", p.Address)
-	// 	}
-	// default:
-	// 	fmt.Println("No data found")
-	// }
-	
 	// ข้อ 6
-	company := Company{
-		Name:       "ABC Company",
-		Address:    "123 Main Street, City, Country",
-		PhoneNumber: "123-456-7890",
-		Website:    "www.abccompany.com",
-	}
+	var c Company
+	c2 := new(Company)
 
-	fmt.Println("Company Name:", company.Name)
-	fmt.Println("Address:", company.Address)
-	fmt.Println("Phone Number:", company.PhoneNumber)
-	fmt.Println("Website:", company.Website)
+	c2.Name = "ABC Company"
+	c2.Address = "123 Main Street, City, Country"
+	c2.PhoneNumber = "123-456-7890"
+	c2.Website = "www.abccompany.com"
+
+	fmt.Println("Company Name:", c2.Name)
+	fmt.Println("Address:", c2.Address)
+	fmt.Println("Phone Number:", c2.PhoneNumber)
+	fmt.Println("Website:", c2.Website)
+	fmt.Println()
+
+	c.Name = "ABC Company"
+	c.Address = "123 Main Street, City, Country"
+	c.PhoneNumber = "123-456-7890"
+	c.Website = "www.abccompany.com"
+
+	fmt.Println("Company Name:", c.Name)
+	fmt.Println("Address:", c.Address)
+	fmt.Println("Phone Number:", c.PhoneNumber)
+	fmt.Println("Website:", c.Website)
+	fmt.Println()
+
+	// company := Company{
+	// 	Name:       "ABC Company",
+	// 	Address:    "123 Main Street, City, Country",
+	// 	PhoneNumber: "123-456-7890",
+	// 	Website:    "www.abccompany.com",
+	// }
+
+	// fmt.Println("Company Name:", company.Name)
+	// fmt.Println("Address:", company.Address)
+	// fmt.Println("Phone Number:", company.PhoneNumber)
+	// fmt.Println("Website:", company.Website)
 	
 }
 // func num2() {
