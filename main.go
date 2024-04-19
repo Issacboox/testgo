@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	// "os"
-	"strconv"
+	// "strconv"
 	// "strings"
 )
 
@@ -24,14 +24,14 @@ func main() {
 	// fmt.Println("Hello world")
 
 	// //ข้อ1
-	// count := 0
-	// for i := 1; i <=100 ; i++ {
-	// 	if i%3 == 0 {
-	// 		fmt.Println(i)
-	// 		count++
-	// 	}
-	// }
-	// fmt.Println("The number of multiples of 3 from 1 to 100 is:", count)
+	count := 0
+	for i := 1; i <=100 ; i++ {
+		if i%3 == 0 {
+			fmt.Println(i)
+			count++
+		}
+	}
+	fmt.Println("The number of multiples of 3 from 1 to 100 is:", count)
 
 	//ข้อ 1.2
 	// num2()
@@ -46,8 +46,8 @@ func main() {
 	// count := countNumber(1000)
 
 	// ข้อ 3.1
-	count := countNumber(10000)
-	fmt.Println("The number of 9s in the numbers from 1 to 10000 is:", count)
+	// count := countNumber(10000)
+	// fmt.Println("The number of 9s in the numbers from 1 to 10000 is:", count)
 
 	// ข้อ 4
 	// myWords := "AW SOME GO!"
@@ -92,6 +92,7 @@ func main() {
 	// fmt.Println("Website:", c.Website)
 	// fmt.Println()
 	
+	// fmt.Printf("\nCompany Name: %v \nAddress: %v \nPhone Number: %v \nWebsite: %v\n", c2.Name, c2.Address, c2.PhoneNumber, c2.Website)
 	// fmt.Println("Company Name:", c2.Name)
 	// fmt.Println("Address:", c2.Address)
 	// fmt.Println("Phone Number:", c2.PhoneNumber)
@@ -152,18 +153,18 @@ func main() {
 // 	return
 // }
 
-func countNumber(n int) int {
-	count := 0
-	for i := 1; i <= n; i++ {
-		str := strconv.Itoa(i)
-		for _, c := range str {
-			if c == '9' {
-				count++
-			}
-		}
-	}
-	return count
-}
+// func countNumber(n int) int {
+// 	count := 0
+// 	for i := 1; i <= n; i++ {
+// 		str := strconv.Itoa(i)
+// 		for _, c := range str {
+// 			if c == '9' {
+// 				count++
+// 			}
+// 		}
+// 	}
+// 	return count
+// }
 
 // func removeSpaces(s string) string {
 // 	var newText string
